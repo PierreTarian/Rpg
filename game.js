@@ -100,10 +100,7 @@ class Game {
             if (
               this.user instanceof Monk ||
               this.user instanceof Berzerker ||
-              this.user instanceof Fighter ||
               this.user instanceof Assassin ||
-              this.user instanceof Wizard ||
-              this.user instanceof Paladin ||
               this.user instanceof Necromencer
             ) {
               this.user.specialAttack();
@@ -143,13 +140,10 @@ class Game {
             } else {
               console.log(`${char.name} effectue une attaque spéciale.`);
               if (
-              this.user instanceof Monk ||
-              this.user instanceof Berzerker ||
-              this.user instanceof Fighter ||
-              this.user instanceof Assassin ||
-              this.user instanceof Wizard ||
-              this.user instanceof Paladin ||
-              this.user instanceof Necromencer
+                this.user instanceof Monk ||
+                this.user instanceof Berzerker ||
+                this.user instanceof Assassin ||
+                this.user instanceof Necromencer
               ) {
                 char.specialAttack();
                 this.manaExec(char, target);
