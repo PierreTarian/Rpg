@@ -25,9 +25,7 @@ class Personnage {
       console.log(
         `${this.name} attaque ${target.name} et lui inflige ${this.dmg} points dégâts. ${target.name} lui reste ${target.hp} points de vie.`,
       );
-      logHtml(
-        `${this.name} attaque ${target.name} et lui inflige ${this.dmg} points dégâts. ${target.name} lui reste ${target.hp} points de vie.`,
-      );
+
     }
   
     applyDamageReduction(turns, amount) {
